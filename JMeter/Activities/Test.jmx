@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test">
+      <boolProp name="TransactionController.includeTimers">false</boolProp>
+    </TransactionController>
+    <hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">0.0</stringProp>
+          <stringProp name="ConstantTimer.delay">0</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 0 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/about">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.path">about</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">43420.0</stringProp>
+          <stringProp name="ConstantTimer.delay">21710</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 43420 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/selenium">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.path">selenium</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">2878.0</stringProp>
+          <stringProp name="ConstantTimer.delay">1439</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 2878 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">3296.0</stringProp>
+          <stringProp name="ConstantTimer.delay">1648</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 3296 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/about">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.path">about</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">1137.0</stringProp>
+          <stringProp name="ConstantTimer.delay">568.5</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 1137 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://v1.training-support.net/" enabled="true">
+        <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+        <stringProp name="HTTPSampler.port">0</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </HTTPSamplerProxy>
+      <hashTree>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <stringProp name="RandomTimer.range">2123.0</stringProp>
+          <stringProp name="ConstantTimer.delay">1061.5</stringProp>
+          <stringProp name="TestPlan.comments">Recorded time was 2123 milliseconds</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
